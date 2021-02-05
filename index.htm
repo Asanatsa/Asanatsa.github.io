@@ -24,7 +24,7 @@
         }
         
         #day,#hour,#min,#sec{
-            font-size: 40px;
+            font-size: 60px;
             font-weight: bold;
             color: goldenrod;
             font-family: 'Times New Roman', Times, serif;
@@ -32,6 +32,10 @@
         
         #tian,#xiaoshi,#fenzhong,#miao{
             font-weight: bold;
+        
+        }
+        .countdown_title {
+            color:darkgoldenrod;
         }
         
     </style>
@@ -39,6 +43,7 @@
 <body>
     <!--整个空-->
     <div style="height: 55px;"></div>
+
     <h1 class="center">Asanatsa浅夏</h1>
     <p class="center">由于种种原因，服务器将暂时停止服务，预计元宵节前后恢复运行。届时域名将变更为http://www.asanatsa.tk</p>
 
@@ -72,7 +77,7 @@
 
                 
                 if (countdownt <= 0) {
-                    var g = Math.abs(countdown);
+                    var g = Math.abs(countdownt);
 
                     var dayD = g / 86400000;
                     var day = Math.floor(dayD);
