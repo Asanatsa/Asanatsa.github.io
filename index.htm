@@ -65,7 +65,7 @@
         
         <script>
             //将元素定义变量，避免重复调用
-            var dom_time = document.getElementById("time");
+            var dom_time = document.getElementByClass("countdown");
             var dom_day = document.getElementById("day");
             var dom_hour = document.getElementById("hour");
             var dom_min = document.getElementById("min");
@@ -151,8 +151,7 @@
             function task () {
                 var dm = countdown(newYearDate);
                 if (dm.status == "Over") {
-                    /*dom_inf.style = "display:block";
-                    dom_time.innerHTML = "新年快乐！";*/
+                    dom_time.innerHTML = "新年快乐！";
                 }
 
                 if (dm.day == 0) {
